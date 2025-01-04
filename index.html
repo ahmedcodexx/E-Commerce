@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="CSS/all.min.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <i onclick="showMenu()" class="fa-solid fa-bars"></i>
+        </div>
+        <h1 class="logo">sneakers</h1>
+        <nav>
+            <ul>
+                <i onclick="closeMenu()" class="fa-solid fa-xmark"></i>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <div class="cart">
+                <i onclick="showCart()" class="fa-solid fa-cart-shopping icon-shop"></i>
+                <span class="count-item">0</span>
+                <div class="shop active">
+                    <h6>Cart</h6>
+                    <div class="cart-items">
+                        <p class="massage">Your cart is empty</p>
+                    </div>
+                </div>
+            </div>
+            <div class="profile">
+                <img src="Images/image-avatar.png" alt="">
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="images">
+            <div class="main">
+                <div class="arrows first">
+                    <i onclick="arrowLeft()" class="fa-solid fa-chevron-left"></i>
+                    <i onclick="arrowRight()" class="fa-solid fa-chevron-right"></i>
+                </div>
+                <img onclick="showPro()" class="main-img first" src="Images/image-product-1-thumbnail.jpg" alt="">
+            </div>
+            <div class="sub">
+                <img onclick="show(this)" class="active-img" src="Images/image-product-1.jpg" alt="">
+                <img onclick="show(this)" src="Images/image-product-2.jpg" alt="">
+                <img onclick="show(this)" src="Images/image-product-3.jpg" alt="">
+                <img onclick="show(this)" src="Images/image-product-4.jpg" alt="">
+            </div>
+        </div>
+        <div class="products">
+            <p>sneaker company</p>
+            <h1>Fall Limited Edition Sneakers</h1>
+            <p class="title">
+                These low-profile sneakers are your perfect casual wear companion. Featuring a
+                durable rubber outer sole, they'll withstand everything the weather can offer.
+            </p>
+            <div class="price">
+                <p class="new-price">$125.00 <span>50%</span></p>
+                <p class="old-price"><del>$250.00</del></p>
+            </div>
+            <div class="add-to-cart">
+                <div class="counter">
+                    <button class="decrement" onclick="decrement()">-</button>
+                    <span class="count">1</span>
+                    <button class="increment" onclick="increment()">+</button>
+                </div>
+                <button class="add-btn" onclick="addToCart()"><i class="fa-solid fa-cart-shopping"></i> Add to cart</button>
+            </div>
+        </div>
+        <div class="show-products active">
+            <div class="images">
+                <div class="main">
+                    <div class="arrows">
+                        <i onclick="arrowLeft()" class="fa-solid fa-chevron-left"></i>
+                        <i onclick="arrowRight()" class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    <img class="main-img" src="Images/image-product-1-thumbnail.jpg" alt="">
+                </div>
+                <div class="sub">
+                    <img onclick="show(this)" class="active-img" src="Images/image-product-1.jpg" alt="">
+                    <img onclick="show(this)" src="Images/image-product-2.jpg" alt="">
+                    <img onclick="show(this)" src="Images/image-product-3.jpg" alt="">
+                    <img onclick="show(this)" src="Images/image-product-4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>
